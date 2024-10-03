@@ -1,0 +1,45 @@
+/* Container for the entire book list */
+.container {
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 20px auto; /* Center the container horizontally with some margin */
+    padding: 20px; /* Add some padding inside the container */
+    border: 1px solid #ddd; /* Add a light border around the container */
+    border-radius: 5px; /* Round the corners of the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #f9f9f9; /* Set a light background color */
+  }
+  
+  /* Heading for the book list */
+  h1 {
+    font-size: 24px; /* Set the font size for the heading */
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark gray color for the text */
+  }
+  
+  /* Style for each book item */
+  .book-item {
+    margin-bottom: 15px; /* Space between each book item */
+    padding: 15px; /* Padding inside each book item */
+    border: 1px solid #ccc; /* Border around each book item */
+    border-radius: 5px; /* Round the corners of each book item */
+    background-color: #fff; /* White background for book items */
+    transition: box-shadow 0.2s; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for book items */
+  .book-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  /* Style for the author, publication year, and ISBN */
+  strong {
+    color: #555; /* Medium gray for strong text */
+  }
+  
+  /* Style for the message when no books are available */
+  p {
+    font-size: 16px; /* Set a default font size for paragraphs */
+    color: #666; /* Light gray color for the text */
+    text-align: center; /* Center the message */
+  }
+  

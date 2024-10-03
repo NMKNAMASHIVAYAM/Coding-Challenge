@@ -1,0 +1,21 @@
+
+<!-- 
+<nav>
+  <a class="menu-item" [routerLink]="['/admindash', { outlets: { cac: ['addbooks'] } }]">add Books</a>
+  <br>
+  <a class="menu-item" [routerLink]="['/admindash', { outlets: { cac: ['updatebooks'] } }]">update Books</a>
+  <br>
+  <a class="menu-item" [routerLink]="['/admindash', { outlets: { cac: ['deletebooks'] } }]">delete Books</a>
+
+</nav>
+
+<router-outlet name="cac"></router-outlet> 
+<router-outlet></router-outlet>  -->
+<nav class="nav-container">
+  <a class="menu-item" [routerLink]="['/admindash', { outlets: { cac: ['addbooks'] } }]">Add Books</a>
+  <a class="menu-item" [routerLink]="['/admindash', { outlets: { cac: ['updatebooks'] } }]">Update Books</a>
+  <a class="menu-item" [routerLink]="['/admindash', { outlets: { cac: ['deletebooks'] } }]">Delete Books</a>
+</nav>
+
+<router-outlet name="cac"></router-outlet>
+<router-outlet></router-outlet>

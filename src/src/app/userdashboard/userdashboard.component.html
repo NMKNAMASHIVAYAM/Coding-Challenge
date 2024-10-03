@@ -1,0 +1,14 @@
+<!-- <h1>User Dashboard</h1>
+<nav>
+  <a class="menu-item" [routerLink]="['/userdash', { outlets: { hexa: ['allbooks'] } }]">Show All Books</a>
+</nav>
+
+<router-outlet name="hexa"></router-outlet> 
+<router-outlet></router-outlet>  -->
+<h1>User Dashboard</h1>
+<nav>
+  <a class="menu-item" [routerLink]="['/userdash', { outlets: { hexa: ['allbooks'] } }]">Show All Books</a>
+</nav>
+
+<router-outlet name="hexa"></router-outlet> <!-- Ensure this is included -->
+<router-outlet></router-outlet> 

@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Books List</h1>
+  
+    
+    <input
+      type="text"
+      [(ngModel)]="isbnFilter"
+      (input)="filterByISBN()"
+      placeholder="Filter by ISBN"
+      class="isbn-filter"
+    />
+  
+    
+    <div *ngIf="filteredLibraries.length === 0">
+      <p>No books available.</p>
+    </div>
+  
+  
+    <ul *ngIf="filteredLibraries.length > 0">
+      <li *ngFor="let book of filteredLibraries" class="book-item">
+        <h2>{{ book.title }}</h2>
+        <p><strong>Author:</strong> {{ book.author }}</p>
+        <p><strong>Publication Year:</strong> {{ book.publication_year }}</p>
+        <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+      </li>
+    </ul>
+  </div>
+  
